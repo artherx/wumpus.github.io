@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 150px 0 150px;
+  background-color: #444;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}
+@media (min-width: 800px) {
+  #tablero {
+    display: flex;
+  }
+}
+@media (max-width: 801px) {
+    #tablero {
+      display: flex;
+      width: 100%;
+      height: 60vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    #tablero .pboard{
+        margin-bottom: 10px;
+    }
+  }
+
+.mboard,
+.pboard {
+  background-color: transparent;
+  height: 350px;
+  width: 350px;
+}
+
+.mboard td,
+.pboard td {
+  background-color: #efefef;
+  border-radius: 10px;
+}
+
+.pboard {
+  float: right;
+}
+
+.mboard {
+  float: left;
+}
+button {
+  width: 20%;
+  height: 5%;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0a1a1;
+}
